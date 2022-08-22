@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+:root{
+    --bg-color: #E5E5E5;
+    --p-color: #7D7987;
+    --black-color:  #000000;
+    --white-color:  #ffffff;
+    --wp-color:  rgba(255, 255, 255, 0.9);
+}
+.hero3{
+    background-image: url(/image/element.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    width: 100%;
+    min-height: 600px;
+    background-color: #d4e4fa33;
+    .navbar{
+        background-color: rgb(212, 228, 250,0.2);
+        .navBox{
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1150px;
+            width: 100%;
+            margin: 0 auto;
+            .navLogo{
+                h1{
+                    font-size: 40px;
+                    font-weight: 700;
+                    color: #444;
+                }
+            }
+            .bun{
+                display: none;
+                cursor: pointer;
+                div{
+                    width: 30px;
+                    height: 3px;
+                    margin: 5px;
+                    background: #333;
+                }
+            }
+            .navlink{
+                padding-right: 20px;
+                display: flex;
+                a{
+                    text-decoration: none;
+                    color: #1F1534;
+                    padding: 7px 11px;
+                    margin: 0 7px;
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 23px;
+                }
+                a:hover{
+                    color: #777;
+                }
+            }
+            .navlink.active{
+                display: flex;
+                position: absolute;
+                top: 80px;
+                flex-direction: column;
+                background-color: rgb(212, 228, 250,0.9);
+                width: 100%;
+                padding: 20px 0px;
+                text-align: center;
+                a{
+                padding: 20px 0;
+                }
+                a:hover{
+                    background-color: rgba(121, 159, 212, 0.1);
+                }
+            }
+        }
+    }
+
+    .heroBody{
+        
+        padding: 20px;
+        max-width: 1150px;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .heroText{
+            margin-top: 70px;
+            h1{
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 56px;
+                color: var(--black-color);
+                
+            }
+            p{
+                font-weight: 300;
+                font-size: 21px;
+                line-height: 32px;
+                color: var(--p-color);
+                margin: 30px 0;
+            }
+            button{
+                padding: 12px 25px;
+                border-radius: 100px;
+                background-color: #458FF6;
+                color: var(--white-color);
+                font-weight: 700;
+                font-size: 18px;
+                border: none;
+                cursor: pointer;
+            }
+        }
+        .heroImage{
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+
+.service{
+    
+    .serviceText{
+        text-align: center;
+        max-width: 952px;
+        margin: 0 auto;
+        h1{
+            font-weight: 700;
+            font-size: 36px;
+            margin-top: 60px;
+        }
+        div{
+            background-color: rgb(163, 163, 163);
+            width: 100px;
+            height: 3px;
+            margin: 20px auto;
+        }
+        p{
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 30px;
+            color: var(--p-color);
+        }
+    }
+
+
+
+    .serviceCard{
+        background-image: url(/image/Vector.png);
+        background-repeat: no-repeat;
+        margin-bottom: 200px;
+        margin-top: 50px;
+        .cardBox{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: repeat(auto-fit, 350px);
+            grid-gap: 20px;
+            max-width: 1150px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 20px;
+            .card{
+                box-shadow: 10px 40px 50px rgba(229, 233, 246, 0.4);
+                border-radius: 20px;
+                background-color: #b1c0d433;
+                padding: 40px;
+            
+                .imageCard{
+                    width: 100%;
+                }
+                h2{
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 56px;
+                }
+                p{
+                    font-weight: 300;
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: var(--p-color);
+                }
+            }
+    }
+    .learn{
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: #458FF6;
+            font-size: 18px;
+        }
+    }
+    }
+}
+
+// another new section
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 817px){
+    .hero3{
+        .navbar{
+            .navBox{
+                padding: 20px;
+                .navLogo{
+                    h1{
+                        font-size: 30px;
+                    }
+                }
+                .bun{
+                    display: block;
+                }
+                .navlink{
+                    display: none;
+                }
+            }
+        }
+        .heroBody{
+            flex-wrap: wrap;
+            .heroText{
+                text-align: center;
+                margin-bottom: 40px;
+            }
+        }
+    }
+}
